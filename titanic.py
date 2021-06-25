@@ -83,9 +83,9 @@ for word in ["the", "and", "of", "I", "a", "to", "in", "was", "it", "this"]:
     df2.loc[mask2, "Description"] = df2.loc[mask2, "Description"].str.replace(word, '')
 
 # most counts per word
-mC0 = Counter(" ".join(df0["Description"]).split()).most_common(5)
-mC1 = Counter(" ".join(df1["Description"]).split()).most_common(5)
-mC2 = Counter(" ".join(df2["Description"]).split()).most_common(5)
+mC0 = Counter(" ".join(df0["Description"]).split()).most_common(10)
+mC1 = Counter(" ".join(df1["Description"]).split()).most_common(10)
+mC2 = Counter(" ".join(df2["Description"]).split()).most_common(10)
 
 # print result
 print(mC0, mC1, mC2)
