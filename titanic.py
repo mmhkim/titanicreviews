@@ -36,7 +36,8 @@ with open('reviews.csv', 'w') as csv_file:
         csv_writer.writerow([title, description, ratings, int(helpful[0])])
 
 # Task 2: k-means clustering
-df = pd.read_csv("/Users/mmhki/OneDrive/Documents/CMU/projects/reviews.csv")
+df = pd.read_csv("reviews.csv")
+# i replaced the parameter with a general file; normally, my directory would go in there
 # change directory, this one personal
 
 #scaling variables
